@@ -6,7 +6,7 @@ import json
 
 
 class TestViews(TestCase):
-    def setUP(self):
+    '''def setUP(self):
         self.client = Client()
         self.appointment_url = reverse('appointment')
         self.doctor = Doctor.objects.create{
@@ -19,7 +19,7 @@ class TestViews(TestCase):
             twitter = models.CharField(max_length=120, blank=True, null=True)
             facebook = models.CharField(max_length=120, blank=True, null=True)
             instagram = models.CharField(max_
-        }   
+        } 
 
 
     def test_Appointment_view_get(self):
@@ -33,4 +33,4 @@ class TestViews(TestCase):
 
 
         self.assertEquals(response.status_code, 302)
-        self.assertEquals(self.appointment1)
+        self.assertEquals(self.appointment1)'''
