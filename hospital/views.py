@@ -80,6 +80,6 @@ class ContactView(TemplateView):
                 ['expelmahmud@gmail.com'],
                 fail_silently=False,
             )
-            messages.success(request, " Email hasbeen sent successfully...")
+            messages.success(request, " Email has been sent successfully...")
 
         return redirect('contact')
