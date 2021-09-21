@@ -28,3 +28,5 @@ class AppointmentView(View):
                 name=name, phone=phone, email=email, doctor=doctor, date=date, time=time, note=note)
             messages.success(request,'Appointment done successfully')
         return redirect('appointment')
+
+
