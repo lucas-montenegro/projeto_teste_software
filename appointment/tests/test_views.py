@@ -3,7 +3,6 @@ from hospital.models import Doctor, Expertize
 from django.test import TestCase, Client
 from django.urls import reverse
 from appointment.models import Appointment
-from hospital.models import Doctor
 import datetime
 import tempfile
 
@@ -38,6 +37,7 @@ class TestViews(TestCase):
 
         self.assertEquals(response.status_code, 200)
         self.assertTemplateUsed(response, 'appointment/index.html')
+        self.assertQuerysetEqual(response.context['doctors'], map(repr, Doctor.objects.all()))
 
     def test_Appointment_view_post_successful(self):
         response = self.client.post(self.appointment_url, {
@@ -79,5 +79,3 @@ class TestViews(TestCase):
 
         self.assertEquals(response.status_code, 302)
         self.assertEquals(Appointment.objects.filter(id=1).first(), None)
-
-

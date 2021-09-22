@@ -1,4 +1,3 @@
-import datetime
 import tempfile
 from django.test import TestCase
 from hospital.models import Slider, Service, Item, Doctor, Expertize, Faq, Gallery
