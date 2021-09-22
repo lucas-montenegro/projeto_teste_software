@@ -1,3 +1,26 @@
+# Projeto Teste de Software
+
+No projeto foram feitos testes de views, models e urls, testando as principais partes e funcionalidades de cada arquivo e sendo gerados um total de 38 testes. Segue os comandos para realizar os testes do projeto:
+
+
+Para testar tudo:
+
+```
+python3 manage.py test
+```
+
+Para testar a parte de hospital:
+
+```
+python3 manage.py test hospital
+```
+
+Para testar a parte de appointment:
+
+```
+python3 manage.py test appointment
+```
+
 # Heart Care
 
 Heartcare is a diagonostic management project developed in django. Admin can add doctor, add services, add gallery pictures . User can see doctors profile and also they can make appointment. They can also contact to the heartcare through email.
